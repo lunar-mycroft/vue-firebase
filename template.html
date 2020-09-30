@@ -1,0 +1,14 @@
+<div id="todo">
+  <h1>To-Do List</h1>
+  <form v-on:submit.prevent="addTodo"> <!--Method Handler-->
+    <input type="text" v-model="newTodoText" placeholder="Add new to-do"/>
+  </form>
+  
+  <ul>
+    <li v-for="todo in todos">
+      {{todo.text}}
+      <button
+       @click="removeTodo(todo.id)">Remove</button>
+    </li>
+    </ul>
+</div>
