@@ -1,6 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Baloo+Tamma|Indie+Flower';
 
-* {
+
+* {  /* Selector for all on the page */
   box-sizing: border-box;
 }
 

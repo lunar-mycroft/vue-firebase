@@ -1,12 +1,28 @@
+<link rel=¨stylesheet¨ type=¨text/css¨ href=¨style.css¨>
+<script src="firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js "></script> <!-- Vue -->
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js "></script>   <!-- Firebase-->
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js "></script> <!-- Firestore -->
+<!-- We are creating a form to allow for the user to enter in a new item in the list
+Method handler in HTML
+-v-on  directive to listen to DOM events
+-v-on:submit action for what happens when submit
+-v-on:submit.prevent stops the page from redirecting after submitting
+-->
+<!-- This is the form input location with type text
+v-model – Creates two-way bindings on form input; this allows for us to input something and that value is updated
+placeholder shows when the input is empty
+-->
+
 <div id="todo">
   <h1>To-Do List</h1>
   <form v-on:submit.prevent="addTodo"> <!--Method Handler-->
     <input type="text" v-model="newTodoText" placeholder="Add new to-do"/>
   </form>
-  
+   
   <ul>
-    <li v-for="todo in todos">
-      {{todo.text}}
+    <li v-for="todo in todos"><!-- This renders a list of items based on an Array with todos as the source of data Array and todo is an alias for the Array element being iterated on-->
+      {{todo.text}} <!-- Mustache syntax Form of data binding called text interpolation The value of the todo is placed here after we add-->
       <button
        @click="removeTodo(todo.id)">Remove</button>
     </li>
