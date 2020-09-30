@@ -14,12 +14,12 @@ Let's Get Started:
                  3. Give it a name 
     
         After the project is created we will need specific information about the project to access the database correctly. <br>
-              `var config = { apiKey: "AIzaSyDE_O5p2wYbsDnnqGga11XXZxpOp1nLmlI",`
-              `authDomain: "test-17c76.firebaseapp.com", `
-              `databaseURL: "https://test-17c76.firebaseio.com", `
-              `projectId: "test-17c76",`
-              `storageBucket: "",` 
-              `messagingSenderId: "855722645833"};`
+              `var config = { apiKey: "AIzaSyDE_O5p2wYbsDnnqGga11XXZxpOp1nLmlI",`<br>
+              `authDomain: "test-17c76.firebaseapp.com", `<br>
+              `databaseURL: "https://test-17c76.firebaseio.com", `<br>
+              `projectId: "test-17c76",`<br>
+              `storageBucket: "",` <br>
+              `messagingSenderId: "855722645833"};`<br>
         
         We will update the above code to match your database during the lesson.
 
