@@ -14,7 +14,7 @@ Let's Get Started:
                  3. Give it a name 
     
         After the project is created we will need specific information about the project to access the database correctly.
-              '''
+              ''' javascript
              var config = {
                 apiKey: "AIzaSyDE_O5p2wYbsDnnqGga11XXZxpOp1nLmlI", <br>
                 authDomain: "test-17c76.firebaseapp.com", <br>
