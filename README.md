@@ -14,7 +14,7 @@ Let's Get Started:
                  3. Give it a name 
     
         After the project is created we will need specific information about the project to access the database correctly.
-              ''' javascript
+              ```javascript
              var config = {
                 apiKey: "AIzaSyDE_O5p2wYbsDnnqGga11XXZxpOp1nLmlI", <br>
                 authDomain: "test-17c76.firebaseapp.com", <br>
@@ -23,7 +23,7 @@ Let's Get Started:
                 storageBucket: "", <br>
                 messagingSenderId: "855722645833" <br>
             };
-            '''
+            ```
         We will update the above code to match your database during the lesson.
 
    3.Once Firebase is correctly connected, we will code the rest of the JS file. Each line is commented with importatn information. Please feel free to ask questions! :)
