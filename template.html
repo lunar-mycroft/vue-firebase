@@ -14,7 +14,7 @@ v-model – Creates two-way bindings on form input; this allows for us to input 
 placeholder shows when the input is empty
 -->
 
-<div id="todo">
+<div id="todo"> <!--Starting div -->
   <h1>To-Do List</h1>
   <form v-on:submit.prevent="addTodo"> <!--Method Handler-->
     <input type="text" v-model="newTodoText" placeholder="Add new to-do"/>
